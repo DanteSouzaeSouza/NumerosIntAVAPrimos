@@ -33,6 +33,7 @@
             this.btnWhile = new System.Windows.Forms.Button();
             this.btnDo = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnPrimos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstNumeros
@@ -55,7 +56,7 @@
             // 
             // btnWhile
             // 
-            this.btnWhile.Location = new System.Drawing.Point(304, 125);
+            this.btnWhile.Location = new System.Drawing.Point(304, 105);
             this.btnWhile.Name = "btnWhile";
             this.btnWhile.Size = new System.Drawing.Size(75, 23);
             this.btnWhile.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             // btnDo
             // 
-            this.btnDo.Location = new System.Drawing.Point(304, 197);
+            this.btnDo.Location = new System.Drawing.Point(304, 160);
             this.btnDo.Name = "btnDo";
             this.btnDo.Size = new System.Drawing.Size(75, 23);
             this.btnDo.TabIndex = 3;
@@ -75,7 +76,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(304, 280);
+            this.btnLimpar.Location = new System.Drawing.Point(304, 266);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 4;
@@ -83,11 +84,22 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
+            // btnPrimos
+            // 
+            this.btnPrimos.Location = new System.Drawing.Point(304, 213);
+            this.btnPrimos.Name = "btnPrimos";
+            this.btnPrimos.Size = new System.Drawing.Size(75, 23);
+            this.btnPrimos.TabIndex = 5;
+            this.btnPrimos.Text = "Primos";
+            this.btnPrimos.UseVisualStyleBackColor = true;
+            this.btnPrimos.Click += new System.EventHandler(this.btnPrimos_Click);
+            // 
             // FrmNumeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(454, 378);
+            this.Controls.Add(this.btnPrimos);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnDo);
             this.Controls.Add(this.btnWhile);
@@ -106,6 +118,7 @@
         private System.Windows.Forms.Button btnWhile;
         private System.Windows.Forms.Button btnDo;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnPrimos;
     }
 }
 

@@ -72,5 +72,35 @@ namespace NumerosIntAVA
                 i++;
             } while (i <= 100);
         }
+
+        private void btnPrimos_Click(object sender, EventArgs e)
+        {
+            // Limpando a lista
+            lstNumeros.Items.Clear();
+
+            // Declaração das variáveis:
+            int num = 1;
+            int cont;
+
+            // fazer o código ser rodado enquanto o tamanho da lista é menor ou igual a 100
+            while (lstNumeros.Items.Count <= 100)
+            {
+                // variáveis de controle
+                cont = 0;
+                num++;
+
+                for (int i = 1; i <= num; i++)
+                {
+                    if (num % i == 0)
+                    {
+                        cont++;
+                    }
+                }
+                if (cont == 2)
+                {
+                    lstNumeros.Items.Add(num);
+                }
+            }
+        }
     }
 }
